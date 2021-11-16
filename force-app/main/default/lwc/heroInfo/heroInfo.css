@@ -1,0 +1,21 @@
+:host {
+    position: relative;
+    display: block;
+}
+
+img,
+video {
+    position: relative;
+    width: 100%;
+}
+
+.hero-center-default,
+.hero-center-left {
+    top: 30%;
+    left: 10%;
+}
+
+.hero-center-right {
+    top: 30%;
+    right: 10%;
+}
