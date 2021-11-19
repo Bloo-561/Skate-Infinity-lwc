@@ -3,12 +3,12 @@
     <video if:true={Video} autoplay muted loop>
         <source src={resUrl} type="video/mp4" />
     </video>
-    <heroInfo
+    <c-heroInfo
         class={heroInfoPositionClass}
         title={title}
         sub-text={subText}
         store-button={buttonToStore}
     >
         <span slot="button">{buttonText}</span>
-    </heroInfo>
+    </c-heroInfo>
 </template>

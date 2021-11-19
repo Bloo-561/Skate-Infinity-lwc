@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Category</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Almost</fullName>
+                <default>false</default>
+                <label>Almost</label>
+            </value>
+            <value>
+                <fullName>Bear</fullName>
+                <default>false</default>
+                <label>Bear</label>
+            </value>
+            <value>
+                <fullName>Baker</fullName>
+                <default>false</default>
+                <label>Baker</label>
+            </value>
+            <value>
+                <fullName>Birdhouse</fullName>
+                <default>false</default>
+                <label>Birdhouse</label>
+            </value>
+            <value>
+                <fullName>Blind</fullName>
+                <default>false</default>
+                <label>Blind</label>
+            </value>
+            <value>
+                <fullName>Element</fullName>
+                <default>false</default>
+                <label>Element</label>
+            </value>
+            <value>
+                <fullName>Flip</fullName>
+                <default>false</default>
+                <label>Flip</label>
+            </value>
+            <value>
+                <fullName>Girl</fullName>
+                <default>false</default>
+                <label>Girl</label>
+            </value>
+            <value>
+                <fullName>Plan B</fullName>
+                <default>false</default>
+                <label>Plan B</label>
+            </value>
+            <value>
+                <fullName>Real</fullName>
+                <default>false</default>
+                <label>Real</label>
+            </value>
+            <value>
+                <fullName>Toy Machine</fullName>
+                <default>false</default>
+                <label>Toy Machine</label>
+            </value>
+            <value>
+                <fullName>Zero</fullName>
+                <default>false</default>
+                <label>Zero</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
