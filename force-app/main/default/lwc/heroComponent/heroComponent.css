@@ -36,8 +36,3 @@ a {
     font-weight: bold;
     text-transform: uppercase;
 }
-
-button:hover {
-    background-position: right center;
-    color: white;
-}

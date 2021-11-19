@@ -1,0 +1,73 @@
+<template>
+    <lightning-card title="FILTERS">
+        <div class="slds-var-m-horizontal_medium">
+            <lightning-input
+                label="Search"
+                type="search"
+                onchange={handleSearchKeyChange}
+            ></lightning-input>
+            <section>
+                <lightning-slider
+                    label="Max Price"
+                    step="10"
+                    min="0"
+                    max="200"
+                    value={maxPrice}
+                    onchange={handleMaxPriceChange}
+                ></lightning-slider>
+            </section>
+            <section>
+                <h1>Category</h1>
+                <template if:true={categories.data}>
+                    <template
+                        for:each={categories.data.values}
+                        for:item="category"
+                    >
+                        <lightning-input
+                            key={category.value}
+                            label={category.label}
+                            data-filter="categories"
+                            data-value={category.value}
+                            type="checkbox"
+                            checked
+                            onchange={handleCheckboxChange}
+                        ></lightning-input>
+                    </template>
+                </template>
+                <template if:true={categories.error}>
+                    <c-error-panel
+                        type="inlineMessage"
+                        friendly-message="Error loading categories"
+                        errors={categories.error}
+                    ></c-error-panel>
+                </template>
+            </section>
+            <section>
+                <h1>Color</h1>
+                <template if:true={colors.data}>
+                    <template
+                        for:each={colors.data.values}
+                        for:item="color"
+                    >
+                        <lightning-input
+                            key={color.value}
+                            label={color.label}
+                            data-filter="colors"
+                            data-value={color.value}
+                            type="checkbox"
+                            checked
+                            onchange={handleCheckboxChange}
+                        ></lightning-input>
+                    </template>
+                </template>
+                <template if:true={colors.error}>
+                    <c-error-panel
+                        type="inlineMessage"
+                        friendly-message="Error loading product colors"
+                        errors={colors.error}
+                    ></c-error-panel>
+                </template>
+            </section>
+        </div>
+    </lightning-card>
+</template>

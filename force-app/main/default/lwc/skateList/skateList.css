@@ -1,0 +1,17 @@
+.slds-card {
+    background: rgb(169,169,169);
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+c-skate-tile {
+    min-width: 200px;
+    flex: 1;
+}
+
+c-paginator {
+    display: block;
+}

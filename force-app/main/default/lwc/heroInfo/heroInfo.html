@@ -1,14 +1,14 @@
 <template>
-    <img alt="" if:true={Img} src={resUrl}></img>
-    <video if:true={Video} autoplay muted loop>
+    <img alt="" if:true={isImg} src={resUrl} />
+    <video if:true={isVideo} autoplay muted loop>
         <source src={resUrl} type="video/mp4" />
     </video>
-    <c-heroInfo
-        class={heroInfoPositionClass}
+    <div if:true={isOverlay}></div>
+    <c-hero-component
+        class={heroPositionClass}
         title={title}
-        sub-text={subText}
-        store-button={buttonToStore}
+        slogan={slogan}
+        record-name={buttonClickProductOrFamilyName}
     >
-        <span slot="button">{buttonText}</span>
-    </c-heroInfo>
+    </c-hero-component>
 </template>
