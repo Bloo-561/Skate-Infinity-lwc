@@ -49,22 +49,6 @@
                 label="Hero Text Block Position"
                 datasource="apex://HeroPositionCustomPicklist"
             />
-            <property
-                name="overlay"
-                type="Boolean"
-                label="Overlay"
-                description="Apply dark overlay over hero"
-                default="true"
-            />
-            <property
-                name="opacity"
-                type="Integer"
-                label="Overlay Opacity"
-                description="How dark the overlay should be. 0 (no overlay) - 1 (completely dark)"
-                min="0"
-                max="10"
-                default="5"
-            />
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>
