@@ -3,36 +3,34 @@
     text-align: center;
 }
 
-h1,
-p {
-    color: var(--lwc-colorTextButtonBrand, white);
+h1,p {
+    color:  white;
     font-family: 'KlavikaWebRegularCond', 'Klavika', Helvetica;
     margin-bottom: 10px;
     font-weight: normal;
-    letter-spacing: 0.14em;
+    letter-spacing: 2px;
     line-height: 1;
-    font-size: 1.5rem;
-    margin: 0.5em 0 0.74em;
+    font-size: 24px;
+    margin: 6px 0 12px;
     padding: 0;
     text-transform: uppercase;
 }
 
 h1 {
-    letter-spacing: 0.03em;
     line-height: 0.88;
     margin: 0;
-    font-size: 3rem;
+    font-size: 48px;
     font-weight: bold;
 }
 
 a {
     text-align: center;
-    padding: 4rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 64px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     border-radius: 10px;
     border: none;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
 }
