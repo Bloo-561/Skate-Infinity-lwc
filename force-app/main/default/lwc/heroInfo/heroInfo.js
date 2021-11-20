@@ -12,8 +12,6 @@ export default class HeroInfo extends LightningElement {
     @api resourceUrl;
     @api imgOrVideo;
     @api internalResource;
-    @api overlay;
-    @api opacity;
 
     get resUrl() {
         if (this.isImg) {
@@ -40,13 +38,5 @@ export default class HeroInfo extends LightningElement {
         }
 
         return 'c-hero-center-default';
-    }
-
-    renderedCallback() {
-        
-        const overlay = this.template.querySelector('div');
-        if (overlay) {
-            overlay.style.opacity = parseInt(this.opacity, 10) / 10;
-        }
     }
 }
