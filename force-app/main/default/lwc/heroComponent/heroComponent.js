@@ -7,7 +7,7 @@ export default class HeroDetails extends LightningElement {
     @api recordName;
 
     recordInfoData;
-    hrefUrl;
+    isUrl;
 
     @wire(getRecordInfo, { productOrFamilyName: '$recordName' })
     recordInfo({ error, data }) {
@@ -15,9 +15,9 @@ export default class HeroDetails extends LightningElement {
         
         if (!error && data) {
             if (data[1] === 'Product__c') {
-                this.hrefUrl = `product/${data[0]}`;
+                this.isUrl = `product/${data[0]}`;
             } else {
-                this.hrefUrl = `product-family/${data[0]}`;
+                this.isUrl = `product-family/${data[0]}`;
             }
         }
     }
