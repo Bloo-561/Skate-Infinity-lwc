@@ -3,8 +3,7 @@
     display: block;
 }
 
-img,
-video {
+img, video {
     position: relative;
     width: 100%;
 }
@@ -18,14 +17,4 @@ video {
 .c-hero-center-right {
     top: 30%;
     right: 10%;
-}
-
-div {
-    background-color: black;
-    opacity: 0.5;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
 }
